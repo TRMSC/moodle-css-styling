@@ -75,7 +75,7 @@ border: 1px solid #d0deaf!important;
     overflow: overlay;
 }
 .block_calendar_month .today {
-display: block;
+    display: block;
 }
 .today:before {
     content: '';
@@ -88,12 +88,12 @@ display: block;
     margin-top: -2px;
     position: absolute;
 }
-#page-calendar-view .region-main-content .today:before{
+#page-calendar-view #region-main .today:before{
     margin:0px!important;
 }
  
 /* Appearance of the calendar site */
-#page-calendar-view .region-main-content .arrow{
+#page-calendar-view #region-main .arrow{
     background-color: #fff57d;
     border-radius: 50%;
     margin-left: 0px;
@@ -103,27 +103,27 @@ display: block;
     padding-bottom: 5px;
     border: 1px solid #c1c1c1;
 }
-#page-calendar-view .region-main-content .arrow_link.previous{
+#page-calendar-view #region-main .arrow_link.previous{
     background-image: linear-gradient(45deg, #fff57d, transparent);
     background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 7px;
 }
-#page-calendar-view .region-main-content .arrow_link.next{
+#page-calendar-view #region-main .arrow_link.next{
     background-image: linear-gradient(45deg, transparent, #fff57d);
     background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 7px;
 }
-#page-calendar-view .region-main-content .current{
+#page-calendar-view #region-main .current{
 margin-bottom: 30px;
 }
-#page-calendar-view .region-main-content .header{
+#page-calendar-view #region-main .header{
 margin-bottom: 45px;
 }
-#page-calendar-view .region-main-content .btn-secondary.float-sm-right:before {
+#page-calendar-view #region-main .btn-secondary.float-sm-right:before {
     content: '+ ';
 }
-#page-calendar-view .region-main-content .calendarmonth{
+#page-calendar-view #region-main .calendarmonth{
 border: 1px solid #b9b5b5;
 }
