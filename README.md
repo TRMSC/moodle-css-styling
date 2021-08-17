@@ -13,7 +13,7 @@ Raw-CSS for moodle to make stylesheet changes inside the theme or as inline-CSS 
 
 - After changing css you have to __delete the cache__ for making changes active. You can press __CTRL+F5__ therefore.
 
-- The codes in this repository are __tested in the classic theme__ if there is no other information. __In many cases there are also tests in the boost theme__. In many cases the codes are compatible. Otherwise there will arise different versions by getting feedback. 
+- The codes in this repository are __tested in the classic theme__ if there is no other information. __In many cases there are also tests in the boost theme__. Often the codes are compatible. Otherwise there will arise different versions by getting feedback. 
 
 __Thanks for help by giving comments or making pull-requests.__
 

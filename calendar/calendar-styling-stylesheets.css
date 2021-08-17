@@ -1,0 +1,129 @@
+/* Calendar Styling v.1.0 (calendar-styling-classic.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Colors and other changes for the different event types */
+.calendar_event_course {
+    background-color: #c1d9de;
+}
+.path-calendar .maincalendar .calendarmonth ul li .calendar-circle.calendar_event_course {
+background-color: #c1d9de;
+border: 1px solid #919494!important;
+}
+.calendar_event_site {
+    background-color: #d0deaf;
+}
+.path-calendar .maincalendar .calendarmonth ul li .calendar-circle.calendar_event_site {
+background-color: #c1d9de;
+border: 1px solid #d0deaf!important;
+}
+.calendar_event_group {
+    background-color: #d8c6f6;
+}
+.path-calendar .maincalendar .calendarmonth ul li .calendar-circle.calendar_event_group {
+background-color: #d8c6f6;
+border: 1px solid #d0deaf!important;
+}
+.calendar_event_user {
+    background-color: #e5cbb9;
+}
+.path-calendar .maincalendar .calendarmonth ul li .calendar-circle.calendar_event_user {
+background-color: #e5cbb9;
+border: 1px solid #d0deaf!important;
+}
+.calendar_event_category {
+    background-color: #b6e1c1;
+}
+.path-calendar .maincalendar .calendarmonth ul li .calendar-circle.calendar_event_category {
+    background-color: #b6e1c1;
+    border: 1px solid #d0deaf!important;
+}
+.calendar_event_course:hover, .calendar_event_site:hover, .calendar_event_group:hover, .calendar_event_user:hover, .calendar_event_category:hover {
+    box-shadow: 0px 0px 10px 2px #8d929e;
+}
+ 
+/* Changes for the calendar block */
+.minicalendar {
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 5px 2px #e0dddd;
+    margin-bottom: 4px!important;
+}
+.block_calendar_month .card-text{
+    margin-top: 7px!important;
+}
+ 
+/* Show the whole texts for the events on the calendar site by hover */
+.text-xs-center a:hover .eventname {
+    position: absolute!important;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    box-shadow: 0px 0px 5px 2px #e0dddd;
+    background-color: white;
+}
+ 
+/* Mark today */
+.today {
+    border: 1px solid #928f8f!important;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-top: -2px;
+    padding-top: 2px;
+    padding-bottom: 2.5px!important;
+    margin-bottom: -3px;
+    overflow: overlay;
+}
+.block_calendar_month .today {
+    display: block;
+}
+.today:before {
+    content: '';
+    border-style: solid;
+    border-width: 5px 4px 0px;
+    border-color: #928f8f transparent;
+    display: block;
+    z-index: 10;
+    overflow: overlay;
+    margin-top: -2px;
+    position: absolute;
+}
+#page-calendar-view #region-main .today:before{
+    margin:0px!important;
+}
+ 
+/* Appearance of the calendar site */
+#page-calendar-view #region-main .arrow{
+    background-color: #fff57d;
+    border-radius: 50%;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #c1c1c1;
+}
+#page-calendar-view #region-main .arrow_link.previous{
+    background-image: linear-gradient(45deg, #fff57d, transparent);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 7px;
+}
+#page-calendar-view #region-main .arrow_link.next{
+    background-image: linear-gradient(45deg, transparent, #fff57d);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    margin-top: 7px;
+}
+#page-calendar-view #region-main .current{
+margin-bottom: 30px;
+}
+#page-calendar-view #region-main .header{
+margin-bottom: 45px;
+}
+#page-calendar-view #region-main .btn-secondary.float-sm-right:before {
+    content: '+ ';
+}
+#page-calendar-view #region-main .calendarmonth{
+border: 1px solid #b9b5b5;
+}
