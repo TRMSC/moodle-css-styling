@@ -1,0 +1,50 @@
+/* Calendar Styling v.1.0 (calendar-styling-classic.html) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block */
+/* Furthermore you can go to the function setLinks() and follow the instructions if you want to. */
+
+<script>
+    window.onload = function() {
+        jquery_load_check_interval = setInterval(function() {
+            if (window.jQuery) {
+                showDate();
+                setLinks();
+                console.log("jQuery geladen...");
+                console.log($.fn.jquery); /* jQuery Version */
+                clearInterval(jquery_load_check_interval);
+            } else {
+                console.log("neuer Versuch jQuery zu laden...");
+            }
+        }, 150);
+
+        /* PART FOR FUNCTIONS */
+
+        function showDate() {
+            var dayDetail = new Date();
+            var day = dayDetail.getDate();
+            var month = dayDetail.getMonth() + 1; 
+            var year = dayDetail.getFullYear(); 
+          
+            if (day < 10) {
+                day = '0' + day;
+            }
+            if (month < 10) {
+                month = '0' + month;
+            }
+          
+            dayDetail = day + '.' + month + '.' + year;
+            $(".block_calendar_month .card-title").after("<h3>" + dayDetail + "</h3>");
+        }
+      
+        function setLinks() {
+            /* Put your moodle URL into the following code and delete the two slashes in both lines for building links to the calendar and event site in the blocks.*/
+          
+            // $(".block_calendar_month .card-title").after("<a href='https://YOUR-MOODLE-URL/moodle/calendar/view.php?view=month&time'> <i class='fa fa-external-link'></i></a>");
+            // $(".block_calendar_upcoming .card-title").after("<a href='YOUR-MOODLE-URL/moodle/calendar/view.php?view=upcoming'> <i class='fa fa-external-link'></i></a>");
+          
+        }
+
+        /* END OF THE FUNCTIONS PART */
+    };
+</script>
