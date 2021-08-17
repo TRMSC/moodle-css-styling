@@ -1,8 +1,8 @@
-/* Calendar Styling v.1.0 (calendar-styling-classic.html) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
-/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+<!-- Calendar Styling v.1.0 (calendar-styling-classic.html) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ -->
+<!-- GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html -->
 
-/* Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block */
-/* Furthermore you can go to the function setLinks() and follow the instructions if you want to. */
+<!-- Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block -->
+<!-- Furthermore you can go to the function setLinks() and follow the instructions if you want to. -->
 
 <script>
     window.onload = function() {
@@ -34,7 +34,7 @@
             }
           
             dayDetail = day + '.' + month + '.' + year;
-            $(".block_calendar_month .card-title").after("<h3>" + dayDetail + "</h3>");
+            $(".block_calendar_month .content").before("<h3>" + dayDetail + "</h3>");
         }
       
         function setLinks() {
