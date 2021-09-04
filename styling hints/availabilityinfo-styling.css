@@ -1,0 +1,27 @@
+/* Availabilityinfo Styling v.0.1 (availabilityinfo-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* ----------------------------------------------------- */
+/* BE CAREFUL: NOT TESTED FINALLY!!! CHECK VERSION INFO! */
+/* ----------------------------------------------------- */
+
+.path-course .availabilityinfo {
+    font-size: smaller;
+    margin-left: 55px!important;
+    margin-top: 0px!important;
+}
+.path-course .availabilityinfo:before {
+    content: '↘ '
+}
+.path-course .availabilityinfo:after {
+    content: ' 🤓'
+}
+.path-course .mod-indent-outer:hover .availabilityinfo {
+    text-shadow: 0 0 0.8em #3637382b, 0 0 0.8em #3637382b,
+        0 0 0.8em #3637382b;
+    transition:  ease 0.3s;
+    letter-spacing: 1.2px;
+    cursor: help;
+}
