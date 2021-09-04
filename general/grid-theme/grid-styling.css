@@ -1,4 +1,4 @@
-/* Grid Styling v.1.0.2 (grid-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Grid Styling v.1.1 (grid-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -19,4 +19,9 @@
 }
 .gridicons li.currentselected {
     background-color: transparent!important;
+}
+.gridcursor .gridshadebox_arrow {
+    cursor: inherit;
+    position: sticky;
+    margin-top: 20px;
 }
