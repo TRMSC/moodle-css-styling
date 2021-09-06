@@ -1,0 +1,120 @@
+/* SharingCart Styling v.0.1 (sharingcart-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* GENERAL */
+.block_sharing_cart .commands {
+    padding-top: 5px;
+}
+.block_sharing_cart .instancename{
+    align-self: center;
+    margin-bottom: 2px!important;
+}
+.block_sharing_cart .footer {
+    display: none;
+}
+
+/* SYMBOLS */
+.block_sharing_cart .fa-clone::before {
+    content: "\f045";
+}
+.block_sharing_cart .fa-arrow-right::before {
+  content:"\f07b";
+}
+.block_sharing_cart .commands i:hover {
+    box-shadow: 0px 2px 0.5px 0.5px #d1d4dc!important;
+}
+
+/* FOLDER STRUCTURE */
+.block_sharing_cart .directory {
+    background-color: #ececec;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+    padding-top: 2px;
+    margin-bottom: 10px!important;
+    border: 1px solid #9a9a9a;
+}
+.block_sharing_cart .directory .list{
+    border-left: 1px solid black;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.block_sharing_cart .activity {
+    border: none!important;
+}
+
+/* FOLDER MOVE */
+.block_sharing_cart .custom-select{
+    width: 10px;
+}
+.block_sharing_cart .custom-select:hover {
+    box-shadow: 0 0 3px 1px #d1d4dc!important;
+}
+.block_sharing_cart .fa-pencil::before{
+content:"\f196";
+}
+.block_sharing_cart form::before {
+    content: ">>> Ordner wählen oder anlegen (+) >";
+    background-color: #dee6deb0;
+    width: 100px;
+    font-size: x-small;
+    text-align: center;
+    font-weight: 600;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 3px;
+}
+.block_sharing_cart form input{
+    width: 90px!important;
+    margin-left: 8px!important;
+    margin-right: 2px;
+}
+
+/* COPY */
+.clipboard {
+    background-color: #ffc984;
+    position: fixed;
+    z-index: 10;
+    top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 5px;
+    padding-right: 20px;
+    right: 50px;
+    display: inline-grid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #999999;
+}
+.clipboard::before {
+    content: 'Zum Kopieren ein Abschnittsende ansteuern. ';
+}
+.clipboard .instancename {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 250px;
+}
+img.activityicon {
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+    margin-right: 5px;
+}
+.clipboard .fa-ban::after {
+    content: ' (abbrechen)';
+}
+.course-content .move_target {
+    background-color: #ffc984;
+    border-radius: 5px;
+}
+.course-content .move_target:hover {
+    box-shadow: 0 0 5px 1px #c2c2c2;
+    transition: 0.2s;
+}
