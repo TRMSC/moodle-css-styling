@@ -1,6 +1,6 @@
 # Calendar-styling Readme
 
-The codes are testet in classic and boost theme (moodle v.3.11). Please be careful by testing on your individual moodle-site and check out important notes on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md .
+The codes are tested in classic and boost theme (moodle v.3.11). Please be careful by testing on your individual moodle-site and check out important notes on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md .
 
 ---------------------
 
