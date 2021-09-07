@@ -1,4 +1,4 @@
-/* SharingCart Styling v.0.1 (sharingcart-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* SharingCart Styling v.0.2 (sharingcart-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -29,18 +29,22 @@
 /* FOLDER STRUCTURE */
 .block_sharing_cart .directory {
     background-color: #ececec;
-    padding-right: 2px;
-    padding-left: 2px;
-    padding-bottom: 1px;
-    border-radius: 5px;
-    padding-top: 2px;
+    padding-top: 2px!important;
+    padding-bottom: 1px!important;
+    padding-right: 2px!important;
+    padding-left: 2px!important;
+    border-radius: 5px!important;
     margin-bottom: 10px!important;
     border: 1px solid #9a9a9a;
 }
 .block_sharing_cart .directory .list{
     border-left: 1px solid black;
-    margin-left: 10px;
-    margin-bottom: 15px;
+    margin-left: 10px!important;
+    margin-bottom: 15px!important;
+}
+.block_sharing_cart .directory li:first-of-type {
+    margin-left: 5px !important;
+    margin-right: 5px;
 }
 .block_sharing_cart .activity {
     border: none!important;
