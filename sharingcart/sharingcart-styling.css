@@ -1,4 +1,4 @@
-/* SharingCart Styling v.0.2 (sharingcart-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* SharingCart Styling v.0.2.1 (sharingcart-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -77,7 +77,7 @@ content:"\f196";
     margin-right: 2px;
 }
 
-/* COPY */
+/* COPY ELEMENT STICKY */
 .clipboard {
     background-color: #ffc984;
     position: fixed;
@@ -114,6 +114,8 @@ img.activityicon {
 .clipboard .fa-ban::after {
     content: ' (abbrechen)';
 }
+
+/* COPYZONE */
 .course-content .move_target {
     background-color: #ffc984;
     border-radius: 5px;
