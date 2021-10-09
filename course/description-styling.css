@@ -1,0 +1,16 @@
+/* Description Styling v.1.0 (description-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Left gradient border for decitions */
+
+.contentafterlink {
+    margin-top: 5px!important;
+    margin-bottom: 10px;
+    margin-left: 11px!important;
+    padding-bottom: 0px;
+    padding-left: 19px;
+    border-left: 2px solid;
+    border-image: linear-gradient(to bottom, #a0acbd, #a0acbd21 ) 0.1 100%;
+}
