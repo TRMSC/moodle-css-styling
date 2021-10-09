@@ -4,7 +4,7 @@
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
 
 /* Create a new class for labels e.g. in activity descriptions. */
-/* After putting the code in the theme css you can use class="lab" in html-parts e.g. <p class="lab">Some Text</p>. */
+/* After putting the code in the theme css you can use class="lab" in html-parts e.g. <span class="lab">Some Text</span>. */
 
 .lab {
     color: #393c3f;
