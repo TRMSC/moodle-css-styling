@@ -1,4 +1,4 @@
-/* Calendar Styling v.1.0 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Calendar Styling v.1.1 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -96,6 +96,7 @@ border: 1px solid #d0deaf!important;
 #page-calendar-view #region-main .arrow{
     background-color: #fff57d;
     border-radius: 50%;
+    box-shadow: 0 0 5px 2px #e0dddd;
     margin-left: 0px;
     padding-left: 10px;
     padding-right: 10px;
@@ -115,6 +116,11 @@ border: 1px solid #d0deaf!important;
     border-radius: 20px;
     margin-top: 7px;
 }
+#page-calendar-view #region-main .arrow_link:hover .arrow {
+    background-image: linear-gradient( 
+45deg, #d13aff26, transparent);
+    box-shadow: 0 0 7px 0 #8e8e8e!important;
+}
 #page-calendar-view #region-main .current{
 margin-bottom: 30px;
 }
@@ -125,5 +131,30 @@ margin-bottom: 45px;
     content: '+ ';
 }
 #page-calendar-view #region-main .calendarmonth{
-border: 1px solid #b9b5b5;
+    border: 1px solid #b9b5b5;
+    box-shadow: 0 0 5px 2px #e0dddd;
+    margin-bottom: 15px!important;
+}
+
+/*Hide event descriptions*/
+#page-calendar-view .block_fake .eventname, .block_calendar_month .eventname {
+    display: none;
+}
+#page-calendar-view .block_fake ul span, .block_calendar_month ul span {
+    border-radius: 2px;
+}
+#page-calendar-view .block_fake .calendar_filters ul, .block_calendar_month .calendar_filters ul {
+    display: flex;
+}
+#page-calendar-view .block_fake .calendar_filters li .icon, .block_calendar_month .calendar_filters li .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#page-calendar-view .block_fake .fa-eye-slash, .block_calendar_month .fa-eye-slash {
+    background-color: #e88383;
+    border-radius: 2px;
+    box-shadow: 0 0 0px 5px #e35b5b;
+}
+.block_calendar_month .calendar_filters {
+    margin-top: 12px!important;
 }
