@@ -16,6 +16,6 @@ Furthermore you can do a __language customisation__ for showing the information 
 
 ---------------------
 ### Calendar Blocks:
-![htm-mode](https://raw.githubusercontent.com/TRMSC/moodle-css-styling/main/calendar/thumbnail/calendar_blocks.png)
+![htm-mode](https://raw.githubusercontent.com/TRMSC/moodle-css-styling/main/calendar/thumbnail/calendarblock.png)
 ### Calendar Site:
-![htm-mode](https://raw.githubusercontent.com/TRMSC/moodle-css-styling/main/calendar/thumbnail/calendar_site.png)
+![htm-mode](https://raw.githubusercontent.com/TRMSC/moodle-css-styling/main/calendar/thumbnail/calendarsite.png)
