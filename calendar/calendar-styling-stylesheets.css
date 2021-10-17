@@ -1,4 +1,4 @@
-/* Calendar Styling v.1.1 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Calendar Styling v.1.2 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -94,7 +94,7 @@ border: 1px solid #d0deaf!important;
  
 /* Appearance of the calendar site */
 #page-calendar-view #region-main .arrow{
-    background-color: #fff57d;
+    background-color: #ffe37d;
     border-radius: 50%;
     box-shadow: 0 0 5px 2px #e0dddd;
     margin-left: 0px;
@@ -105,16 +105,18 @@ border: 1px solid #d0deaf!important;
     border: 1px solid #c1c1c1;
 }
 #page-calendar-view #region-main .arrow_link.previous{
-    background-image: linear-gradient(45deg, #fff57d, transparent);
+    background-image: linear-gradient(45deg, #ffe37d, transparent);
     background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 7px;
+    text-decoration: none;
 }
 #page-calendar-view #region-main .arrow_link.next{
-    background-image: linear-gradient(45deg, transparent, #fff57d);
+    background-image: linear-gradient(45deg, transparent, #ffe37d);
     background-repeat: no-repeat;
     border-radius: 20px;
     margin-top: 7px;
+    text-decoration: none;
 }
 #page-calendar-view #region-main .arrow_link:hover .arrow {
     background-image: linear-gradient( 
