@@ -1,0 +1,40 @@
+/* Folder Styling v.1.0 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* ONLY TESTED IN MOODLE 3.9.10 (classic theme) UNTIL NOW */
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Styles the folder ressource. */
+
+#page-mod-folder-view .foldertree .fp-filename:not(a span) {
+    font-weight: 500;
+    background-color: #b7c8de54;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+#page-mod-folder-view .foldertree #ygtvcontentel1 * {
+    background-color: transparent!important;
+}
+#page-mod-folder-view .foldertree * {
+    background-position-y: 8px!important;
+}
+#page-mod-folder-view .foldertree .fp-icon {
+    display: flex;
+    align-items: self-end;
+}
+#page-mod-folder-view .foldertree .icon {
+    margin-top: 5px;
+}
+#page-mod-folder-view .foldertree .ygtvtm, #page-mod-folder-view .foldertree .ygtvtmh, #page-mod-folder-view .foldertree #ygtvtableel1 * {
+    background-position-x: 2px;
+}
+#page-mod-folder-view .foldertree a span:first-child {
+    margin-left: 15px;
+}
+#page-mod-folder-view .foldertree a.ygtvspacer {
+    margin-top: 5px;
+    margin-right: 1px;
+    background-color: #8b8b8c0f;
+    border-radius: 3px;
+    border: 1px solid #b9b9b9;
+}
