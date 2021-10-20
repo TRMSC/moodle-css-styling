@@ -1,0 +1,30 @@
+/* LTI Styling v.1.0 (lti-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* ONLY TESTED IN MOODLE 3.9.10 (classic theme) UNTIL NOW */
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Make a fancy button for adding content from a preconfigured tool. 🎉 */
+
+#page-mod-lti-mod #id_selectcontent:not(:disabled):not(.disabled) {
+    background-image: linear-gradient(45deg, #1419b5, #ff23d0);
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 16px 1px #7474747a;
+    padding-left: 20px;
+}
+#page-mod-lti-mod #id_selectcontent:not(:disabled):not(.disabled):hover {
+    background-image: linear-gradient(45deg, #7703a4, #c02efc);
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0 0 12px 1px #7474749e;
+    padding-left: 20px;
+    transition: ease 0.3s;
+}
+#page-mod-lti-mod #id_selectcontent:not(:disabled):not(.disabled):after {
+    content: "🎉";
+}
+#page-mod-lti-mod #id_selectcontent:not(:disabled):not(.disabled):focus-visible {
+    outline: 1px solid #9239ef!important;
+    border: 1px solid #a91fc6!important;
+}
