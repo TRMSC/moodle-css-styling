@@ -1,4 +1,4 @@
-/* Calendar Styling v.1.2 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Calendar Styling v.1.2.1 (calendar-styling-stylesheet.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
@@ -51,6 +51,10 @@ border: 1px solid #d0deaf!important;
 }
 .block_calendar_month .card-text{
     margin-top: 7px!important;
+}
+.block_calendar_upcoming {
+    height: 320px;
+    overflow-y: auto;
 }
  
 /* Show the whole texts for the events on the calendar site by hover */
