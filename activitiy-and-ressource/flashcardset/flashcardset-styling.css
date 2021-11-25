@@ -1,0 +1,44 @@
+/* Flashcardset Styling v.0.1 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* You can put this code in the activity settings or your theme css. */
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+#page-mod-flashcard-view .flashcard-question, .flashcard-answer {
+    border: 1px solid #aaa8a8;
+    border-radius: 20px!important;
+    box-shadow: 3px 3px 13px 2px #9f9f9f;
+}
+#page-mod-flashcard-view .flashcard-question:hover, #page-mod-flashcard-view .flashcard-answer:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 15px 3px #939393;
+}
+#page-mod-flashcard-view #region-main table {
+    border-collapse: unset;
+}
+#page-mod-flashcard-view #region-main input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #aaa8a8;
+    box-shadow: 2px 2px 7px 0px #9f9f9f;
+    height: 50px;
+    font-size: larger;
+}
+#page-mod-flashcard-view #region-main input:hover {
+    box-shadow: 2px 2px 8px 1px #939393;
+}
+#page-mod-flashcard-view .flashcard-backtocourse {
+    text-align: right;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#page-mod-flashcard-view #region-main p:not(.flashcard_board p), #page-mod-flashcard-view .flashcard_board a {
+    display: none;
+}
+#page-mod-flashcard-view #page-mod-flashcard-view .flashcard_board {
+    margin-top: 30px;
+}
+#page-mod-flashcard-view .emptyset {
+    color: #555555;
+    font-size: x-large;
+}
