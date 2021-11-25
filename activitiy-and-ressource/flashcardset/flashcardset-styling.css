@@ -1,4 +1,4 @@
-/* Flashcardset Styling v.0.1 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Flashcardset Styling v.0.2 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* You can put this code in the activity settings or your theme css. */
@@ -16,7 +16,7 @@
 #page-mod-flashcard-view #region-main table {
     border-collapse: unset;
 }
-#page-mod-flashcard-view #region-main input {
+#page-mod-flashcard-view #region-main input[type="submit"] {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #aaa8a8;
