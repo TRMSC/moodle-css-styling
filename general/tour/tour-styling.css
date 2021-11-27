@@ -1,0 +1,13 @@
+/* Tour Styling v.0.1 (tour-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Makes the tour compatible for longer texts showing in the middle of the screen by integrating a scroll area. */
+.orphan {
+    top:50px!important;
+}
+.orphan .modal-body {
+    overflow-y: scroll;
+    max-height: 400px!important;
+}
