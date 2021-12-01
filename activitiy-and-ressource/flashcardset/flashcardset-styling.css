@@ -1,4 +1,4 @@
-/* Flashcardset Styling v.0.3 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Flashcardset Styling v.0.3.1 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* You can put this code in the activity settings or your theme css. */
@@ -70,15 +70,14 @@
 #page-mod-flashcard-view .flashcard-decks img:hover {
     transition: 0.3s;
     box-shadow: 8px 14px 10px 1px #9e9e9e;
-    transform: rotate3d(9, 0, 0, 
-10deg);
+    transform: rotate3d(9, 0, 0, 10deg);
 }
 #page-mod-flashcard-view #flashcard-controls {
     display: table-cell;
     padding-left: 50px;
     padding-top: 25%;
 }
-.flashcard-screenlinks {
+#page-mod-flashcard-view .flashcard-screenlinks {
     margin-top: 30px;
 }
 #page-mod-flashcard-view #region-main .flashcard-decks:before {
