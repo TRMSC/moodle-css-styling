@@ -1,17 +1,18 @@
-/* Flashcardset Styling v.0.3 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Flashcardset Styling v.0.2 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* You can put this code in the activity settings or your theme css. */
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
 
-/* If you don't like the card-colors you can change them or delete the following part until the space. */
+/* If you don't like the card-colors you can change them or delete the following part between the lines. */
+/*------------------*/
 #page-mod-flashcard-view .flashcard-question {
     background-image: linear-gradient(341deg, rgba(133, 147, 198, 0.38), transparent)!important;
 }
 #page-mod-flashcard-view .flashcard-answer {
     background-image: linear-gradient(341deg, rgba(70, 177, 73, 0.27), transparent)!important;
 }
-
+/*------------------*/
 
 #page-mod-flashcard-view .flashcard-question, .flashcard-answer {
     border: 1px solid #aaa8a8;
@@ -23,7 +24,6 @@
 #page-mod-flashcard-view .flashcard-question:hover, #page-mod-flashcard-view .flashcard-answer:hover {
     cursor: pointer;
     box-shadow: 3px 3px 15px 3px #939393;
-    transition: 0.3s;
 }
 #page-mod-flashcard-view #region-main table {
     border-collapse: unset;
@@ -41,7 +41,7 @@
 }
 #page-mod-flashcard-view .flashcard-backtocourse {
     text-align: right;
-    margin-top: 0px;
+    margin-top: 20px;
     padding-top: 0px;
 }
 #page-mod-flashcard-view #region-main p:not(.flashcard_board p), #page-mod-flashcard-view .flashcard_board a {
@@ -53,4 +53,45 @@
 #page-mod-flashcard-view .emptyset {
     color: #555555;
     font-size: x-large;
+}
+
+/* Leitner */
+#page-mod-flashcard-view .flashcard-decks img {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-top: 1px solid #6e6e6e;
+    border-left: 1px solid #6e6e6e;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 1px #9e9e9e;
+    transition: 0.1s;
+}
+#page-mod-flashcard-view .flashcard-decks img:hover {
+    transition: 0.3s;
+    box-shadow: 8px 14px 10px 1px #9e9e9e;
+    transform: rotate3d(9, 0, 0, 
+10deg);
+}
+#page-mod-flashcard-view #flashcard-controls {
+    display: table-cell;
+    padding-left: 50px;
+    padding-top: 25%;
+}
+.flashcard-screenlinks {
+    margin-top: 30px;
+}
+#page-mod-flashcard-view #region-main .flashcard-decks:before {
+    content: "Verlauf";
+    color: transparent;
+    width: 100%;
+    display: block;
+    background: linear-gradient(45deg, #fa440e40, #02d40840);
+    margin-bottom: 15px;
+}
+#page-mod-flashcard-view .flashcard_playbutton .btn:after {
+    content: " 😎";
+}
+#page-mod-flashcard-view .flashcard-playbutton .btn:after {
+    content: " 😕";
 }
