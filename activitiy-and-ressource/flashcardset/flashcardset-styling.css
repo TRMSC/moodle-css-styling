@@ -1,9 +1,21 @@
-/* Flashcardset Styling v.0.3.1 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Flashcardset Styling v.0.3.2 (folder-styling.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* You can put this code in the activity settings or your theme css. */
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
 
+/* FLASHCARDSET GENERAL */
+#page-mod-flashcard-view #region-main .rightlinks a {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+#page-mod-flashcard-view #region-main  .rightlinks a:hover {
+    background-color: #e7e7e7;
+    text-decoration: none;
+}
+/* FLASHCARDSET FREEPLAY */
 /* If you don't like the card-colors you can change them or delete the following part between the lines. */
 /*------------------*/
 #page-mod-flashcard-view .flashcard-question {
@@ -13,7 +25,6 @@
     background-image: linear-gradient(341deg, rgba(70, 177, 73, 0.27), transparent)!important;
 }
 /*------------------*/
-
 #page-mod-flashcard-view .flashcard-question, .flashcard-answer {
     border: 1px solid #aaa8a8;
     border-radius: 20px!important;
@@ -54,8 +65,7 @@
     color: #555555;
     font-size: x-large;
 }
-
-/* Leitner */
+/* FLASHCARDSET LEITNER */
 #page-mod-flashcard-view .flashcard-decks img {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -70,7 +80,8 @@
 #page-mod-flashcard-view .flashcard-decks img:hover {
     transition: 0.3s;
     box-shadow: 8px 14px 10px 1px #9e9e9e;
-    transform: rotate3d(9, 0, 0, 10deg);
+    transform: rotate3d(9, 0, 0, 
+10deg);
 }
 #page-mod-flashcard-view #flashcard-controls {
     display: table-cell;
