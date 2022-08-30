@@ -1,20 +1,18 @@
-/* Requirements Eye v.1.0 (requirements-eye.css) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ */
+/* Requirements Eye v.1.0.1 (requirements-eye.css) - Copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/ */
 /* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
 
 /* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
 
 /* Make the eye in the requirement settings green and bigger. */
 
-.availability-field .availability-eye {
-    background-color: #a9ff99ad;
-    padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 3px;
+.availability-field .availability-eye, .availability-field .availability-eye:focus {
+    background-color: #a9ff99ad!important;
+    padding: 3px 7px 7px 7px!important;
     margin-top: 5px;
     border: 2px solid;
     color: #8d6c6c;
     border-radius: 10px;
 }
-.availability-field .availability-eye img{
+.availability-field .availability-eye img {
     width: 20px;
 }
