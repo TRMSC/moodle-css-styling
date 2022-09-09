@@ -1,0 +1,15 @@
+/* Dropdown Badge v.0.1 - Copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/ */
+/* GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html */
+
+/* Please check the readme file on https://github.com/TRMSC/moodle-css-styling/blob/main/README.md before changing css in moodle. */
+
+/* Creates an info badge for the dropdown menu in moodle 4 on top of some setting pages that is easily overlooked. */
+
+.urlselect:after {
+    content: "Weitere Optionen verfügbar";
+    font-size: small;
+    font-weight: bold;
+    background-color: var(--warning);
+    border-radius: 5px;
+    padding: 0px 5px 1px 5px;
+}
