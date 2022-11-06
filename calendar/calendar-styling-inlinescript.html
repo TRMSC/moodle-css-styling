@@ -1,50 +1,80 @@
-<!-- Calendar Styling v.1.0 (calendar-styling-inlinescript.html) - Copyright (C) 2021, TRMSC - https://trmsc1.wordpress.com/ -->
-<!-- GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html -->
-
-<!-- Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block -->
-<!-- Furthermore you can go to the function setLinks() and follow the instructions if you want to. -->
-
 <script>
-    window.onload = function() {
-        jquery_load_check_interval = setInterval(function() {
-            if (window.jQuery) {
-                showDate();
-                setLinks();
-                console.log("jquery successfully loaded...");
-                console.log($.fn.jquery); // <== version of jQuery
-                clearInterval(jquery_load_check_interval);
-            } else {
-                console.log("new try to load jquery...");
-            }
-        }, 150);
 
-        /* PART FOR FUNCTIONS */
+/**
+ * Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block
+ * Furthermore you can adjust the settings in lines 15 - 17
+ *
+ * @name Moodle Calendar Styling - Inlinescript
+ * @version 1.1
+ * @license GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html
+ * @copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/
+ *
+ */
+ 
+ // SETTINGS:
+ let showTime = true; //CHANGE TO FALSE IF YOU DON'T WANT TO SHOW THE TIME
+ let calendarSiteURL = ''; //FILL IN YOUR CALENDAR URL (BETWEEN THE '') IF YOU WANT TO HAVE A LINK
+ let eventSiteURL = ''; //FILL IN YOUR EVENT URL (BETWEEN THE '') IF YOU WANT TO HAVE A LINK
+ 
+ let setDate = function() {
+     let date = new Date();
+     let day = date.getDate();
+     let month = date.getMonth() + 1; 
+     let year = date.getFullYear(); 
+     
+     day = day < 10 ? '0' + day : day;
+     month = month < 10 ? '0' + month : month;
+          
+     let fullDate = document.createElement('h3');
+     fullDate.textContent = day + '.' + month + '.' + year;
+     let position = document.getElementsByClassName('block_calendar_month')[0].getElementsByClassName('content')[0];
+     position.before(fullDate);
+     if (showTime) {
+         setTime(fullDate);
+     };
+ };
+     
+ let setTime = function(fullDate) {
+     let hours;
+     let minutes;
+     let seconds;
+     let fullTime = document.createElement('h5');
+     fullDate.after(fullTime);
+     fullTime.textContent = updateTime();
+     let interval = setInterval (function(){
+       fullTime.textContent = updateTime();
+     }, 1000);
+ };
+ 
+ let updateTime = function() {
+     date = new Date();
+     hours = date.getHours();
+     hours = hours < 10 ? '0' + hours : hours;
+     minutes = date.getMinutes();
+     minutes = minutes < 10 ? '0' + minutes : minutes;
+     seconds = date.getSeconds();
+     seconds = seconds < 10 ? '0' + seconds : seconds;
+     return hours + ':' + minutes + ':' + seconds;
+ };
 
-        function showDate() {
-            var dayDetail = new Date();
-            var day = dayDetail.getDate();
-            var month = dayDetail.getMonth() + 1; 
-            var year = dayDetail.getFullYear(); 
-          
-            if (day < 10) {
-                day = '0' + day;
-            }
-            if (month < 10) {
-                month = '0' + month;
-            }
-          
-            dayDetail = day + '.' + month + '.' + year;
-            $(".block_calendar_month .content").before("<h3>" + dayDetail + "</h3>");
-        }
-      
-        function setLinks() {
-            /* Put your moodle URL into the following code and delete the two slashes in both lines for building links to the calendar and event site in the blocks.*/
-          
-            // $(".block_calendar_month .card-title").after("<a href='URL-OF-YOUR-CALENDERSITE'> <i class='fa fa-external-link'></i></a>");
-            // $(".block_calendar_upcoming .card-title").after("<a href='URL OF YOUR EVENTSITE'> <i class='fa fa-external-link'></i></a>");
-          
-        }
-
-        /* END OF THE FUNCTIONS PART */
-    };
+ let setLinks = function() {
+    if (calendarSiteURL.length > 0) {
+      let calendarTitle = document.getElementsByClassName('block_calendar_month')[0].getElementsByClassName('card-title')[0];
+      let calendarLink = document.createElement('a');
+      calendarLink.href = calendarSiteURL;
+      calendarLink.innerHTML = ' <i class="fa fa-external-link"></i>';
+      calendarTitle.after(calendarLink);
+    }
+    if (eventSiteURL.length > 0) {  
+      let eventTitle = document.getElementsByClassName('block_calendar_upcoming')[0].getElementsByClassName('card-title')[0]
+      let eventLink = document.createElement('a');
+      eventLink.href = eventSiteURL;
+      eventLink.innerHTML = ' <i class="fa fa-external-link"></i>';
+      eventTitle.after(eventLink);
+    }
+ };
+     
+ setDate();
+ setLinks();
+    
 </script>
