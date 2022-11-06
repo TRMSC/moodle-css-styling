@@ -41,16 +41,22 @@
      let seconds;
      let fullTime = document.createElement('h5');
      fullDate.after(fullTime);
+     fullTime.textContent = updateTime();
      let interval = setInterval (function(){
-         date = new Date();
-         hours = date.getHours();
-         hours = hours < 10 ? '0' + hours : hours;
-         minutes = date.getMinutes();
-         minutes = minutes < 10 ? '0' + minutes : minutes;
-         seconds = date.getSeconds();
-         seconds = seconds < 10 ? '0' + seconds : seconds;
-         fullTime.textContent = hours + ':' + minutes + ':' + seconds;
+       fullTime.textContent = updateTime();
      }, 1000);
+ };
+ 
+ let updateTime = function() {
+     date = new Date();
+     hours = date.getHours();
+     hours = hours < 10 ? '0' + hours : hours;
+     minutes = date.getMinutes();
+     minutes = minutes < 10 ? '0' + minutes : minutes;
+     seconds = date.getSeconds();
+     seconds = seconds < 10 ? '0' + seconds : seconds;
+     //fullTime.textContent = hours + ':' + minutes + ':' + seconds;
+     return hours + ':' + minutes + ':' + seconds;
  };
 
  let setLinks = function() {
@@ -73,6 +79,6 @@
  window.onload = function() {
      setDate();
      setLinks();
- }
+ };
     
 </script>
