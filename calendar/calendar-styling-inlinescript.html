@@ -2,16 +2,19 @@
 
 /**
  * Put the code in a textfield or textblock on the main page (or another page) for showing today's date on the calendar block
- * Furthermore you can go to the function setLinks() and follow the instructions if you want to. 
+ * Furthermore you can adjust the settings in lines 15 - 17
  *
  * @name Moodle Calendar Styling - Inlinescript
  * @version 1.1
  * @license GNU General Public Licence 3.0 - http://www.gnu.de/documents/gpl-3.0.en.html
  * @copyright (C) 2022, TRMSC - https://trmsc1.wordpress.com/
  *
- *
  */
+ 
+ // SETTINGS:
  let showTime = true; //CHANGE TO FALSE IF YOU DON'T WANT TO SHOW THE TIME
+ let calendarSiteURL = ''; //FILL IN YOUR CALENDAR URL (BETWEEN THE '') IF YOU WANT TO HAVE A LINK
+ let eventSiteURL = ''; //FILL IN YOUR EVENT URL (BETWEEN THE '') IF YOU WANT TO HAVE A LINK
  
  let setDate = function() {
      let date = new Date();
@@ -51,16 +54,25 @@
  };
 
  let setLinks = function() {
-    /* Put your moodle URL into the following code and delete the two slashes in both lines for building links to the calendar and event site in the blocks.*/
-     
-    // $(".block_calendar_month .card-title").after("<a href='URL-OF-YOUR-CALENDERSITE'> <i class='fa fa-external-link'></i></a>");
-    // $(".block_calendar_upcoming .card-title").after("<a href='URL OF YOUR EVENTSITE'> <i class='fa fa-external-link'></i></a>");
+    if (calendarSiteURL.length > 0) {
+      let calendarTitle = document.getElementsByClassName('block_calendar_month')[0].getElementsByClassName('card-title')[0];
+      let calendarLink = document.createElement('a');
+      calendarLink.href = calendarSiteURL;
+      calendarLink.innerHTML = ' <i class="fa fa-external-link"></i>';
+      calendarTitle.after(calendarLink);
+    }
+    if (eventSiteURL.length > 0) {  
+      let eventTitle = document.getElementsByClassName('block_calendar_upcoming')[0].getElementsByClassName('card-title')[0]
+      let eventLink = document.createElement('a');
+      eventLink.href = eventSiteURL;
+      eventLink.innerHTML = ' <i class="fa fa-external-link"></i>';
+      eventTitle.after(eventLink);
+    }
  };
      
  window.onload = function() {
      setDate();
-     // FUNCTION FOR LINKS IS NOT TRANSLATED TO VANILLA JS FOR NOW
-     //setLinks();
+     setLinks();
  }
     
 </script>
