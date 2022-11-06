@@ -27,7 +27,6 @@
           
      let fullDate = document.createElement('h3');
      fullDate.textContent = day + '.' + month + '.' + year;
-     fullDate.id = 'tr-calendar-date';
      let position = document.getElementsByClassName('block_calendar_month')[0].getElementsByClassName('content')[0];
      position.before(fullDate);
      if (showTime) {
