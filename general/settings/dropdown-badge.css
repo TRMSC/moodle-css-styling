@@ -5,7 +5,8 @@
 
 /* Creates an info badge for the dropdown menu in moodle 4 on top of some setting pages that is easily overlooked. */
 
-.urlselect:not(.path-mod *, .path-course-index *):after {
+.urlselect:not(.path-mod *, .path-course-index *):after,
+.tertiary-navigation-selector:not(.path-mod *, .path-course-index *):after {
     content: "Weitere Optionen verfügbar";
     font-size: small;
     font-weight: bold;
